@@ -208,6 +208,7 @@ public class ContactDao {
 				stmt.executeUpdate();
 				del = true;
 				System.out.println("Запись успешно обновлена");
+				break;
 						}
 					}
 					if(del==false) {
@@ -242,6 +243,7 @@ public class ContactDao {
 						stmt.executeUpdate();
 						System.out.println("Контакт с ID: "+id+" удален!");
 						del=true;
+						break;
 					}
 				}
 				if(del==false){
